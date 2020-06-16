@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: eureka-server
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/studySpringCloud?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=true
+
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: eureka7001.com #eureka服务端的实例名称
+    lease-expiration-duration-in-seconds: 90 #Eureka服务端在收到最后一次心跳后等待时间上限 ,单位为秒(默认是90秒),超时剔除服务
+    lease-renewal-interval-in-seconds: 30 #Eureka客户端向服务端发送心跳的时间间隔,单位为秒(默认是30秒)
+  client:
+    #false 表示不向服务中心注册自己
+    register-with-eureka: false
+    #false 表示自己就是服务中心,不需要去检测服务，职责就是维护服务实例
+    fetch-registry: false
+    #设置与eureka server 指向eureka 7002 server端口
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    #service-url:
+    #  defaultZone: http://eureka7002.com:7002/eureka/
+  server:
+    enable-self-preservation: true  #保护机制默认开启（server端发送消息后，client没有回应，不会立马清除client）

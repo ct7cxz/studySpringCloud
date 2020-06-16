@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: eureka-server
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/studySpringCloud?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=true
+
+server:
+  port: 7002
+eureka:
+  instance:
+    hostname: eureka7002.com #eureka服务端的实例名称
+  client:
+    #false 表示不向服务中心注册自己
+    register-with-eureka: false
+    #false 表示自己就是服务中心,不需要去检测服务，职责就是维护服务实例
+    fetch-registry: false
+    #设置与eureka server 指向eureka 7001 server端口
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/

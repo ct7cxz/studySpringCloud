@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OpenFeign-consumer-order-80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-consumer-order80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-provider-payment8006" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer-feign-hystrix-order80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumers-order-zk80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumers-order80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server7001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server7002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider-hystrix-payment8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider-payment8001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider-payment8002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/provider-payment8004" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

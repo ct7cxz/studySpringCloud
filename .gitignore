@@ -1,0 +1,14 @@
+# Project exclude paths
+/common/target/
+/consul-consumer-order80/target/
+/consul-provider-payment8006/target/
+/consumer-feign-hystrix-order80/target/
+/consumers-order80/target/
+/consumers-order-zk80/target/
+/eureka-server7001/target/
+/eureka-server7002/target/
+/OpenFeign-consumer-order-80/target/
+/provider-hystrix-payment8001/target/
+/provider-payment8001/target/
+/provider-payment8002/target/
+/provider-payment8004/target/
