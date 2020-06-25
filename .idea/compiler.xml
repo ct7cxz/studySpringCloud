@@ -8,18 +8,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consumerfeignhystrixorder80" />
-        <module name="providerhystrixpayment8001" />
-        <module name="eurekaserver7001" />
-        <module name="common" />
-        <module name="consulproviderpayment8006" />
-        <module name="consumersorder80" />
-        <module name="providerpayment8002" />
         <module name="consulconsumerorder80" />
-        <module name="consumersorderzk80" />
+        <module name="consumersorder80" />
+        <module name="providerhystrixpayment8001" />
         <module name="providerpayment8004" />
+        <module name="providerpayment8002" />
+        <module name="providerpayment8001" />
+        <module name="cloudconsumerhystrixdashboard9001" />
         <module name="OpenFeignconsumerorder80" />
         <module name="eurekaserver7002" />
-        <module name="providerpayment8001" />
+        <module name="consumersorderzk80" />
+        <module name="consulproviderpayment8006" />
+        <module name="common" />
+        <module name="eurekaserver7001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
