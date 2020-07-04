@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/payment")
+@RequestMapping(path = "/payment",produces = "application/json;charset=utf-8")
 @Slf4j
 public class PaymentController {
 

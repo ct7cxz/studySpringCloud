@@ -1,0 +1,38 @@
+server:
+  port: 8802
+spring:
+  application:
+    name: cloud-stream-consumer
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/studySpringCloud?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=true
+  cloud:
+    stream:
+      binders: #配置要绑定的rabbitmq相关的信息
+        defaultRabbit:
+          type: rabbit #消息中间件rabbit或Kafka
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings: #服务整合处理
+        input:
+          destination: studyExchange #使用的exchange的名称
+          content-type: application/json  #设置发送的消息类型，此处为json格式
+          binder:  defaultRabbit #设置要绑定的消息服务的具体设置
+          group: groupA
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    # 注册进入的eureka server地址
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: stream-consumer8802
+    prefer-ip-address: true

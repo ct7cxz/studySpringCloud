@@ -24,6 +24,12 @@
       <module>OpenFeign-consumer-order-80</module>
       <module>provider-hystrix-payment8001</module>
       <module>consumer-feign-hystrix-order80</module>
+      <module>cloud-center-config</module>
+      <module>cloud-client3355</module>
+      <module>cloud-client3377</module>
+      <module>cloud-stream-provider</module>
+      <module>cloud-stream-consumer</module>
+      <module>cloud-stream-consumer8803</module>
   </modules>
   <packaging>pom</packaging>
 
