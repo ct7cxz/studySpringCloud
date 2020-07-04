@@ -14,18 +14,20 @@
         <module name="cloudstreamconsumer" />
         <module name="cloudgatewaygateway9527" />
         <module name="providerhystrixpayment8001" />
-        <module name="cloudstreamprovider" />
         <module name="cloudclient3377" />
         <module name="providerpayment8002" />
         <module name="providerpayment8001" />
         <module name="cloudstreamconsumer8803" />
-        <module name="eurekaserver7002" />
-        <module name="cloudcenterconfig" />
+        <module name="eurekaserver7001" />
+        <module name="common" />
+        <module name="consulproviderpayment8006" />
         <module name="consumersorderzk80" />
-        <module name="providerpayment8004" />
-        <module name="OpenFeignconsumerorder80" />
         <module name="eurekaserver7002" />
-        <module name="providerpayment8001" />
+        <module name="OpenFeignconsumerorder80" />
+        <module name="cloudstreamprovider" />
+        <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloudcenterconfig" />
+        <module name="providerpayment8004" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
